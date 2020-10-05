@@ -6,7 +6,12 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 
 ### Programs
 
-* Plotly Scatter Plot - [Scatter Plot](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/1_Scatter_Plots.py), [Results 1](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/scatter-plot.html), [Results 2](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/scatter-plot-modified.html)
+* Plotly Scatter Plot - [Scatter Plot Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/1_Scatter_Plots.py), [Results 1](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/scatter-plot.html), [Results 2](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/scatter-plot-modified.html)
   ```
   go.Scatter, go.Layout, go.Figure
+  ```
+* Plotly Line Charts - [Line Chart Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/2_Line_Charts_Part1.py), Results - [Markers only](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Line-Chart.html), [Lines Only](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Line-Chart-with%20lines.html), [Lines + Markers](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Line-Chart-with-lines-markers.html)
+  ```
+  go.Scatter(mode='lines','markers','lines+markers'), go.Layout, go.Figure
+  data = [trace0, trace1, ....], can combine all graphs in one data list.
   ```
