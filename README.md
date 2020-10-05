@@ -15,3 +15,4 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
   go.Scatter(mode='lines','markers','lines+markers'), go.Layout, go.Figure
   data = [trace0, trace1, ....], can combine all graphs in one data list.
   ```
+    * Line Charts on real data - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/2.Plotly_LineCharts_Part2.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/nst-est2017-alldata.csv), [Result-Lines](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Population-estimate-plot.html)
