@@ -17,3 +17,11 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
   ```
     * Line Charts on real data - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/2.Plotly_LineCharts_Part2.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/nst-est2017-alldata.csv), [Result-Lines](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Population-estimate-plot.html)
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise1_LineChart.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/2010YumaAZ.csv), [Solution](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Daily-Temperature-Yuma-2010.html)
+
+* Plotly Bar Charts - [Bar Chart Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/3.Plotly_BarCharts.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/2018WinterOlympics.csv), Results - [Simple Bar Chart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bar-Chart-Simple.html), [Nested Bar Chart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bar-Chart-Nested.html), [Stacked Bar Chart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bar-Chart-Stacked.html)
+  ```
+  go.Bar(x=df['NOC'],
+        y=df['Gold'],
+        name='Gold',
+        marker={'color':'#FFD700'}), go.Layout, go.Figure
+  data = [trace0, trace1, ....], can produce nested and stacked bar charts
