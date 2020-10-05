@@ -46,7 +46,7 @@ pyo.plot(fig1,filename='Bar-Chart-Nested.html')
 
 #Stacked Bar Chart - just change layout to 'stack' in nested bar chart code
 
-layout2 = go.Layout(title='Total Medals in Winter Olympics 2018 (Nested Bar Chart)',
+layout2 = go.Layout(title='Total Medals in Winter Olympics 2018 (Stacked Bar Chart)',
                     xaxis={'title':'Countries'}, #can use {} approach
                     yaxis=dict(title='Medals'),
                     barmode='stack') #can use dict also
