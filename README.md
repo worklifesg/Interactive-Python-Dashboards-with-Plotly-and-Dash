@@ -25,3 +25,5 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
         name='Gold',
         marker={'color':'#FFD700'}), go.Layout, go.Figure
   data = [trace0, trace1, ....], can produce nested and stacked bar charts
+  ```
+    * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise2_Barchart.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mocksurvey.csv), [Solution_Vertical_Stacked_BarChart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/StackedBarChart_Vertical.html), [Solution_Horizontal_Stacked_BarChart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/StackedBarChart_Horizontal.html)
