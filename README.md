@@ -27,3 +27,13 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
   data = [trace0, trace1, ....], can produce nested and stacked bar charts
   ```
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise2_Barchart.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mocksurvey.csv), [Solution_Vertical_Stacked_BarChart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/StackedBarChart_Vertical.html), [Solution_Horizontal_Stacked_BarChart](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/StackedBarChart_Horizontal.html)
+
+* Plotly Bubble Charts - [Bubble Chart Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/4.Plotly_BubbleCharts.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mpg.csv), Results - [MPG-HP-cylinders](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bubble-Chart-cylinders.html), [MPG-HP-weight](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bubble-Chart-weight.html), [MPG-HP-weight-cylinders](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bubble-Chart-categorical.html)
+  ```
+  [go.Scatter(x=df['horsepower'],
+                    y=df['mpg'],
+                    text = df['name'], #text for hovering
+                    mode = 'markers', 
+                    marker=dict(size=0.01*df['weight'],color=df['cylinders'], #adding cylinders as categorical features 
+                    showscale=True))] # showscale to no. of cylinders on its scale
+  ```
