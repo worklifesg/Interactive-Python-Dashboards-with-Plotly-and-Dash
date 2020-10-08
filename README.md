@@ -37,3 +37,4 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
                     marker=dict(size=0.01*df['weight'],color=df['cylinders'], #adding cylinders as categorical features 
                     showscale=True))] # showscale to no. of cylinders on its scale
   ```
+    * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise3_Bubblechart.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mpg.csv), [Solution_Bubble Chart - 4 Features](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bubble-Chart-Exercise.html)
