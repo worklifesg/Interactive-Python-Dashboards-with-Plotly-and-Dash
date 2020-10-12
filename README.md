@@ -38,3 +38,13 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
                     showscale=True))] # showscale to no. of cylinders on its scale
   ```
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise3_Bubblechart.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mpg.csv), [Solution_Bubble Chart - 4 Features](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Bubble-Chart-Exercise.html)
+    
+* Plotly Box Plots - [Box Plot Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/5.Plotly_BoxPlots.py), Results - [Simple Box plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Simple-Box-Plot.html), [Outliers Box plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Outliers-Box-Plot.html), [Snodgrass-Twain Box Plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Snodgrass-Twain-Box-Plot.html)
+  ```
+  data =[go.Box(y=y,  #No categorical x column
+        boxpoints='all', #boxpoints, displays all original data points
+        jitter=0.3, #spread all values properly 
+        pointpos=2)]  #offset points to left (-ve) or right (+ve)
+  ```
+    * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise4_BoxPlot.py), [Solution_Box Plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Box-Plot-Exercise.html)
+
