@@ -48,3 +48,10 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
   ```
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise4_BoxPlot.py), [Solution_Box Plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Box-Plot-Exercise.html)
 
+* Plotly Histogram Plots - [Histogram Plot Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/6.Plotly_HistogramPlots.py), Results - [Simple Histogram plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Simple-Histogram-Plot.html), [Wide bins Histogram plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Modified-Histogram-Plot.html), [Narrower bins Histogram plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Modified2-Histogram-Plot.html)
+  ```
+
+  data2 = go.Histogram(x=df['mpg'],
+                    xbins=dict(start=0,end=50,size=1)) #display histogram from 0 to 50 mpg with each bin of 1 mpg
+  ```
+    * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise5_HistogramPlot.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/abalone.csv), [Solution_Histogram Plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Histogram-Plot-Exercise.html)
