@@ -55,3 +55,14 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
                     xbins=dict(start=0,end=50,size=1)) #display histogram from 0 to 50 mpg with each bin of 1 mpg
   ```
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise5_HistogramPlot.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/abalone.csv), [Solution_Histogram Plot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Histogram-Plot-Exercise.html)
+    
+
+* Plotly Distribution Plots (DistPlot) - [DistPlot Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/7.Plotly_DistPlots.py), Results - [Basic DistPlot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Basic-Distplot.html), [Multigroup DistPlot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Multigroup-Distplot.html), [Multigroup Binsize DistPlot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Multigroup-Distplot-BinSize.html), [Snodgrass-Twain DistPlot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/SnodgrassTwain-Distplot.html)
+  ```
+
+  hist_data = [x] #list of data points
+  group_labels=['Distplot'] #labels
+
+  fig2=ff.create_distplot(hist_data,group_labels=group_labels, bin_size=[0.2,0.1,0.3,0.4]) # using ff.create
+  ```
+    * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise6_Distplot.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/iris.csv), [Solution_DistPlot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Iris-DistPlot.html)
