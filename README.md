@@ -66,3 +66,41 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
   fig2=ff.create_distplot(hist_data,group_labels=group_labels, bin_size=[0.2,0.1,0.3,0.4]) # using ff.create
   ```
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise6_Distplot.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/iris.csv), [Solution_DistPlot](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Iris-DistPlot.html)
+    
+* Plotly Heatmaps - [Heatmap Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/8.Plotly_Heatmaps.py), Dataset - [Sitka AK](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/2010SitkaAK.csv), [Santa Barbara CA](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/2010SantaBarbaraCA.csv), [Yuma AZ](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/2010YumaAZ.csv), Results - [Basic Heatmaps](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Basic-Heatmap-Temps.html), [ColorMaps Heatmaps](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Colormaps-Heatmap-Temps.html), [Multiple Heatmaps](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Mutiple-Heatmap-Temps.html)
+  ```
+
+  data = [go.Heatmap(x=df['DAY'], #x - xaxis, y- yaxis and z- color axis
+                   y=df['LST_TIME'],
+                   z=df['T_HR_AVG'].values.tolist())] # for color axis, we need a lsit so we convert with .values.tolist() from column to list
+                   
+  For multiple plots:
+  
+    
+    trace1 = go.Heatmap(x=df1['DAY'],
+                    y=df1['LST_TIME'],
+                    z=df1['T_HR_AVG'].values.tolist(),
+                    colorscale='Jet',zmin=5,zmax=40)
+    trace2 = go.Heatmap(x=df2['DAY'],
+                    y=df2['LST_TIME'],
+                    z=df2['T_HR_AVG'].values.tolist(),
+                    colorscale='Jet',zmin=5,zmax=40)
+    trace3 = go.Heatmap(x=df3['DAY'],
+                    y=df3['LST_TIME'],
+                    z=df3['T_HR_AVG'].values.tolist(),
+                    colorscale='Jet',zmin=5,zmax=40)
+
+    from plotly import tools
+
+    figx = tools.make_subplots(rows=1,cols=3, #rows and columns (horiztonal or vertical stacking)
+                          subplot_titles=['Sitka AK', 'SB CA', 'Yuma AZ'],
+                          shared_yaxes=False) #same time stamp for all 3 data, so we keep separte ones
+
+    # allotment of heatmap in rows and columns
+    figx.append_trace(trace1,1,1)
+    figx.append_trace(trace2,1,2)
+    figx.append_trace(trace3,1,3)
+  
+  
+  ```
+    * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise7_Heatmaps.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/flights.csv), [Solution_Heatmaps Flights](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Heatmap-Exercise-Flights.html)
