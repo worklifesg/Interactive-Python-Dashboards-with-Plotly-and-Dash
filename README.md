@@ -109,7 +109,7 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
     * Exercise - [Code Solution](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Plotly%20Basics/Exercise7_Heatmaps.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/flights.csv), [Solution_Heatmaps Flights](https://worklifesg.github.io/Interactive-Python-Dashboards-with-Plotly-and-Dash/Heatmap-Exercise-Flights.html)
 
 ### Program & Exercises (Dash)
-* Dash Basics - [Hello World Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/1.Dash_Basic.py)
+* Dash Basics - [Hello Dash Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/1.Dash_Basic.py)
 
 <p align="center">
   <img width="600" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Basic.PNG">
@@ -119,4 +119,10 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 
 <p align="center">
   <img width="600" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Basic2.PNG">
+</p> 
+
+* Dash Basics (HTML + Core components) - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/1.Dash_Basic3.py)
+
+<p align="center">
+  <img width="600" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Basic3.PNG">
 </p> 
