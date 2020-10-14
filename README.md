@@ -114,3 +114,9 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 <p align="center">
   <img width="600" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Basic.PNG">
 </p> 
+
+* Dash Basics (HTML components - Div) - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/1.Dash_Basic2.py)
+
+<p align="center">
+  <img width="600" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Basic2.PNG">
+</p> 
