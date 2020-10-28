@@ -186,6 +186,5 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 
 * Dash (MarkDown) - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/6.Dash_MarkDown.py)
 <p align="center">
-  Core Components Part I
   <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Markdown.PNG">
 </p> 
