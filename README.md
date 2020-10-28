@@ -172,3 +172,20 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
   HTML Components - Multiple Divs 2
   <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_HTML_DIV_CSS3.PNG">
 </p> 
+
+* Dash (Core Components) - [Code - Part I](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/5.Dash_Core_Components.py), [Code - Part II](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/5.Dash_Core_Components2.py)
+<p align="center">
+  Core Components Part I
+  <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Core_Simple1.PNG">
+  <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Core_Simple2.PNG">
+</p> 
+<p align="center">
+  Core Components Part II
+  <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Core_Simple3.PNG">
+</p> 
+
+* Dash (MarkDown) - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Dash/6.Dash_MarkDown.py)
+<p align="center">
+  Core Components Part I
+  <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Markdown.PNG">
+</p> 
