@@ -194,6 +194,10 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 
 ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/Single.gif)
 
-* Callbacks - Graphs - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/2.Callbacks_Graphs.py)
+* Callbacks - Graphs - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/2.Callbacks_Graphs.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/gapminderDataFiveYear.csv)
 
 ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/Graphs.gif)
+
+* Callbacks - Multiple Inputs - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/3.Callbacks_MultipleInputs.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mpg.csv)
+
+![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/MI.gif)
