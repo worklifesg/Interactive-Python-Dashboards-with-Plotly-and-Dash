@@ -192,8 +192,8 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 ### Program & Exercises (Dash Callbacks)
 * Callbacks - Single Component - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/1.Callbacks_Single.py)
 
-![Alt Text](https://s2.ezgif.com/save/ezgif-2-dedf2221c4da.gif)
+![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/Single.gif)
 
 * Callbacks - Graphs - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/2.Callbacks_Graphs.py)
 
-![Alt Text](https://s2.ezgif.com/save/ezgif-2-a404e4eae44f.gif)
+![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/Graphs.gif)
