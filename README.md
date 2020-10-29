@@ -188,3 +188,12 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 <p align="center">
   <img width="800" alt="java 8 and prio java 8  array review example" img align="center" src ="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Dash_Markdown.PNG">
 </p> 
+
+### Program & Exercises (Dash Callbacks)
+* Callbacks - Single Component - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/1.Callbacks_Single.py)
+
+![Alt Text](https://s2.ezgif.com/save/ezgif-2-dedf2221c4da.gif)
+
+* Callbacks - Graphs - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/2.Callbacks_Graphs.py)
+
+![Alt Text](https://s2.ezgif.com/save/ezgif-2-a404e4eae44f.gif)
