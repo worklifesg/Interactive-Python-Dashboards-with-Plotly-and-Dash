@@ -201,3 +201,13 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
 * Callbacks - Multiple Inputs - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/3.Callbacks_MultipleInputs.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/mpg.csv)
 
 ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/MI.gif)
+
+* Callbacks - Multiple Outputs - [Code (Version 1)](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/4.Callbacks_MultipleOutputs_V1.py), [Code (Version 2)](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/4.Callbacks_MultipleOutputs_V2.py), [Dataset](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Datasets/wheels.csv)
+
+    Result: Version 1
+    
+    ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/4.Callbacks_MultipleOutputs_V1.PNG)
+
+    Result: Version 2
+    
+    ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/MO.gif)
