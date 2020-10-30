@@ -211,3 +211,8 @@ In this repository, we will work on interactive plots using Plotly and Dasboards
     Result: Version 2
     
     ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/MO.gif)
+    
+ 
+* Range Slider - Exercise (Interactive Components) - [Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/5.Exercise_InteractiveComponents.py)
+
+![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/CallBacks/Exercise.gif)
