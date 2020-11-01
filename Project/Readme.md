@@ -87,3 +87,8 @@ Task 6 - Replace the input box with a multiple dropdown list of choices. Pass mu
 ***Task 2 Output*** 
 
 ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task2a.gif)
+
+
+**Note:** - The project covered in the course used [IEX (Investors Exchange)](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html#remote-data-iex) which had free access before 1 June, 2019 and now requires an API key from IEX Cloud Console, which can be stored in the IEX_API_KEY environment variable. To use this key we need to create account and upgrade to premium account to access the data. So we will be **NOT** using IEX data for our project
+
+***Therefore, we will use STOOQ data which is an open source for Indices across Asia, Americas, Europe, and Middle East***
