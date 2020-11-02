@@ -18,6 +18,8 @@ Task 6 - Replace the input box with a multiple dropdown list of choices. Pass mu
 
 ### Sequence Code Development
 
+[[Task 1](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Task1.py)], [[Task 2](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Task2.py)], [[Task 3](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Task3.py)], [[Task 3 modified](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Task3_modified.py)], [[Task 4](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Task4.py)], [[Task 5](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Task5.py)], [[Final Code](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/Project/Final_Complete_Code_Task6.py)]
+
 * **Task 1** - In the first task of the code, we import libraries and set up static graph along with headers for giving out title of the dashboard
 
   ***For importing libraries intially***:
@@ -306,4 +308,43 @@ def update_graph(stock_ticker4):
 
 <p align="center">
   <img src="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task5.gif" />
+</p>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* **Task 6 (Final Code)** - Replace the input box with a multiple dropdown list of choices. Pass multiple stocks as traces on the same graph.
+
+  ***Create a list of options NASDAQ***
+  ```javascript
+  nsdq = pd.read_csv('NASDAQcompanylist.csv')
+  nsdq.set_index('Symbol',inplace=True)
+  options=[]
+  for tic in nsdq.index:
+    #{'label':'usersees', 'value':'script sees'}
+    mydict={}
+    mydict['label'] = str(nsdq.loc[tic]['Name'])+' '+tic # Apple Co.APPL
+    mydict['value'] = tic
+    options.append(mydict)
+  ```
+  ***Callbacks update graph changes (Adding traces)***
+  ```javascript
+   def update_graph(n_clicks,stock_ticker, start_date, end_date):
+     start = datetime.strptime(start_date[:10], '%Y-%m-%d')
+     end = datetime.strptime(end_date[:10], '%Y-%m-%d')
+
+     traces = []
+     for tic in stock_ticker:
+         df = web.DataReader(tic,'stooq',start,end) #multi stock ticker
+         traces.append({'x': df.index, 'y': df.Close,'name':tic})
+     fig = {
+         'data': traces,
+         'layout': {'title':stock_ticker}
+     }
+     return fig
+  ```
+***Final Code Output*** 
+
+<p align="center">
+  <img src="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task6.gif" />
 </p>
