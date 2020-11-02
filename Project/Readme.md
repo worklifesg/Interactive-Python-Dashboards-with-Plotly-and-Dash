@@ -88,6 +88,8 @@ Task 6 - Replace the input box with a multiple dropdown list of choices. Pass mu
 
 ![Alt Text](https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task2a.gif)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Note:** - The project covered in the course used [IEX (Investors Exchange)](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html#remote-data-iex) which had free access before 1 June, 2019 and now requires an API key from IEX Cloud Console, which can be stored in the IEX_API_KEY environment variable. To use this key we need to create account and upgrade to premium account to access the data. So we will be **NOT** using IEX data for our project
 
@@ -211,4 +213,97 @@ def update_graph(stock_ticker4):
 
 <p align="center">
   <img src="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task3a.gif" />
+</p>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* **Task 4** - Add datepickers to select start and end dates and apply them to the callback
+
+  Few changes to Task 3: 
+  ***app.layout additions: 1 (styling done)***
+  ```javascript
+   html.Div([
+        html.H3('Enter a stock symbol:', style={'paddingRight':'30px'}),
+        dcc.Input(
+            id='my_ticker_symbol',
+            value='TSLA', # sets a default value
+            style={'fontSize':24, 'width':75}
+        )
+    ], style={'display':'inline-block', 'verticalAlign':'top'})
+  ```
+  ***app.layout additions: 2 (Datepicker added)***
+  ```javascript
+   html.Div([
+        html.H3('Select start and end dates:'),
+        dcc.DatePickerRange(
+            id='my_date_picker',
+            min_date_allowed = datetime(2015, 1, 1),
+            max_date_allowed = datetime.today(),
+            start_date = datetime(2018, 1, 1),
+            end_date = datetime.today()
+        )
+    ], style={'display':'inline-block'})
+  ```
+  ***Callbacks changes (datepicker inputs)***
+  ```javascript
+  @app.callback(
+    Output('my_graph', 'figure'),
+    [Input('my_ticker_symbol', 'value'),
+    Input('my_date_picker', 'start_date'),
+    Input('my_date_picker', 'end_date')])
+  ```
+  ***Callbacks update graph changes (datetime - string to date time format)***
+  ```javascript
+  def update_graph(stock_ticker, start_date, end_date):
+    start = datetime.strptime(start_date[:10], '%Y-%m-%d')
+    end = datetime.strptime(end_date[:10], '%Y-%m-%d')
+    df = web.DataReader(stock_ticker,'stooq',start,end)
+    fig = {
+        'data': [
+            {'x': df.index, 'y': df.Close}
+        ],
+        'layout': {'title':stock_ticker}
+    }
+    return fig
+  ```
+***Task 4 Output*** 
+
+<p align="center">
+  <img src="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task4.gif" />
+</p>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* **Task 5** - Take advantage of Dash State, and hold all API calls until a Submit button is pressed to update plot
+
+  Few changes to Task 4: 
+  ***app.layout additions: (Submit button)***
+  ```javascript
+   html.Div([
+            html.Button(id='submit-button',
+            n_clicks=0,
+            children='Submit',
+            style={'fontsize':24,'marginLeft':'30px'})
+    ],style={'display':'inline-block'})
+  ```
+  ***Callbacks changes (Submit inputs and datepicker changed from Input -> State)***
+  ```javascript
+  @app.callback(
+    Output('my_graph', 'figure'),
+    [Input('submit-button','n_clicks')],
+    [State('my_ticker_symbol', 'value'), #change input tp state
+    State('my_date_picker', 'start_date'),
+    State('my_date_picker', 'end_date')])
+  ```
+  ***Callbacks update graph changes (calling n_clicks)***
+  ```javascript
+  def update_graph(n_clicks,stock_ticker, start_date, end_date):
+  ```
+***Task 5 Output*** 
+
+<p align="center">
+  <img src="https://github.com/worklifesg/Interactive-Python-Dashboards-with-Plotly-and-Dash/blob/main/images/Task5.gif" />
 </p>
